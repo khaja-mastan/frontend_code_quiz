@@ -1,0 +1,275 @@
+html{
+    font-size: 62%;
+}
+.container-smm{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr minmax(550px,8fr) 1fr 1fr;
+    grid-template-columns: 1fr minmax(300px,2fr) 1fr;
+    border-image: linear-gradient(to right, #e36911, #F40039) 1;
+    border-width: 1.435rem;
+    border-style: solid;
+    background: rgb(31, 30, 30);
+}
+.boxxx{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr minmax(350px,4fr) 1.3fr;
+    border: 2px solid;
+    background: rgb(36 35 35);
+}
+.title1{
+    border: 0.3rem solid rgb(233 134 88);
+    color: darkseagreen;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: math;
+    align-self: center;
+    padding: 0.4rem;
+    margin: 1px 46px 1px 46px;
+    padding: 0px 20px 3px;
+}
+.question{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 7fr 1fr;
+
+}
+.text-light{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: grid;
+    text-align: start;
+    align-content: center;
+    font-weight: 100;
+    font-size: 3.1rem;
+    letter-spacing: 1px;
+    color:#cc9855;
+}
+.opt{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    font-size: 2rem;
+    color: aliceblue;
+    justify-items: flex-start;
+    align-items: center;
+    list-style: none;
+}
+/*-----testing---*/
+
+/* .opt {
+  list-style: none;
+  padding: 0;
+}
+
+.opt li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.opt li label {
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+}
+
+.opt li input[type="radio"] {
+  display: none; 
+}
+
+.opt li input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: white;
+}
+
+.opt li:hover {
+  font-weight: 600;
+}
+
+.opt li input[type="radio"]:checked + label::before {
+  background-color: black; 
+}
+.check.checked{
+  color: aqua;
+} */
+/*------gdgf---*/  
+  /* .opt li {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid black;
+  }
+  
+  .opt li label {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    height: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+  }
+  .opt li:hover{
+    color:#ffffff;
+  }
+  ul li.check{
+    display: block;
+   position:absolute;
+   border: 5px solid #AAAAAA;
+   border-radius: 100%;
+   height: 25px;
+   width: 25px;
+   top: 30px;
+   left: 20px;
+   z-index: 5;
+   transition: border 0.25s linear;
+   -webkit-transition:border 0.25s linear ;
+
+  }
+  .opt li:hover .checked{
+    border: 5px solid #FFFFFF;
+  }
+  .opt li .check::before{
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px ;
+    left: 5px;
+    margin: auto;
+    transition: border 0.25s linear;
+    -webkit-transition:border 0.25s linear ;
+  } */
+
+  .opt li input[type="radio"] {
+    transform: scale(1.5); 
+    margin-right: 10px; 
+  
+  }  
+  
+  /* Style the custom radio button circle before hover and when unchecked */
+ .opt li:not(:hover) input[type="radio"]:not(:checked) + label::before {
+    background-color: transparent;     
+    border-color: rgb(207, 211, 222);
+
+}
+  /* Style the custom radio button circle when checked */
+ .opt li input[type="radio"]:checked ~ .check::before {
+    background-color: #0573e8;
+  }
+   .opt li:hover {
+     font-weight: 600;
+  } 
+  
+  .opt li input[type="radio"]:checked ~ .text-primary {
+    color: #2d79cb; 
+    font-weight: bold;
+  }
+  
+  .opt li:hover input[type="radio"] + label {
+    color: #007bff;
+  }
+
+.text-primary{
+    font-size: 2.9rem;
+    font-family: system-ui;
+    margin-left: 2rem;
+    letter-spacing: 2px;
+}
+.index{
+    font-size: 2.3rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px;
+    border-radius: 1rem;
+    background: bisque;
+}
+.btn.prev{
+    font-size: 3.2rem;
+    padding: 3px 26px 3px;
+    font-family: math;
+    font-weight: 600;
+    background: aqua;
+    border: transparent;
+    border-radius: 1.2rem;
+    margin-bottom: .5rem;
+    box-shadow: 1px 2px 4px rgb(13 17 17);
+}
+.btn.prev:hover{
+    background: rgb(14, 211, 211);
+    color: aliceblue;
+}
+.btn.next{
+    font-size: 3.2rem;
+    padding: 3px 26px 3px;
+    font-family: math;
+    font-weight: 600;
+    background: rgb(56, 226, 40);
+    border: transparent;
+    border-radius: 1.2rem;
+    margin-bottom: .5rem;
+    box-shadow: 1px 2px 4px rgb(13 17 17);
+}
+.btn.next:hover{
+    background: rgb(38, 191, 24);
+    color: aliceblue;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+@media(max-width:1429px){
+  html{
+    font-size: 59%;
+  }
+  .container-smm{
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(300px,2fr) 1fr;
+  }
+}
+
+@media(max-width:1300px){
+    html{
+      font-size: 53%;
+    }
+}
+@media(max-width:1150px){
+    html{
+      font-size: 46%;
+    }
+}
+@media(max-width:998px){
+    html{
+      font-size: 41%;
+    }
+}
+@media(max-width:850px){
+    html{
+      font-size: 36%;
+    }
+}
+@media(max-width:600px){
+    html{
+      font-size: 30%;
+    }
+}

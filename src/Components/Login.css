@@ -1,0 +1,198 @@
+html{
+    font-size: 62%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+.login{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #ffae00, #ff4000) 1;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+.top{
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    justify-content: space-between;
+    direction: rtl;
+}
+.logo{
+    margin-bottom: 1.3rem;
+    width: 100%;
+}
+#heading{
+    border-left: 7px solid orange;
+    padding-left: 8px;
+    height: 60px;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+}
+.tamplate{
+    display: flex;
+    align-items: center;
+}
+.tamplate h3{
+    font-size: 25px;
+    margin-bottom: 0px;
+    font-family: math;
+    margin: 0px 6px 8px;
+}
+.box{
+    box-shadow: 0 1px 4px;
+    width: 74vh;
+    margin-top: 77px;
+    margin-left: 13rem;
+    height: 43vh;
+    display: flow-root;
+    border-radius: 30px;
+}
+.box h2{
+    font-family: -webkit-body;
+}
+
+#up{
+    margin-left: 71px;
+    margin-top: 40px;
+    display: flex;
+    font-size: 2rem;
+    width: 71%;
+}
+#up-h2{
+    margin-right: 2px;
+    margin-left: 4px;
+    font-family: sans-serif;
+}
+#up-in{
+    font-size: 20px;
+    padding: 8px 5px;
+    width: 70%;
+    font-family: serif;
+    border: transparent;
+    background: #efefef;
+    box-shadow: 0px 1px 2px;
+    margin-left: 0px;
+}
+#down{
+
+    display: flex;
+    justify-content: right;
+    width: 74%;
+    margin: 25px 48px;
+    margin-top: 44px;
+}
+#down-h2{
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+.password-container {
+    margin-left: 2px;
+    font-size: 19px;
+    position: relative;
+    display: inline-flex;
+   width: 66%;
+
+  }
+  
+  #down-in {
+    padding: 8px;
+    font-family: serif;
+    font-size: 21px;
+    padding-right: 30px; /* Provide enough space for the eye icon */
+    width: 100%; /* Ensure the input field takes the full available width */
+    border: transparent;
+    background: #efefef;
+    box-shadow: 0px 1px 2px;
+  }
+  
+  #togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%; /* Center the eye icon vertically */
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  
+
+.button{
+    position: relative;
+    margin: 63px;
+    font-family: ui-monospace;
+    font-size: x-large;
+    padding: 5px;
+    width: 35%;
+    box-shadow: 0 3px 5px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    color: rgb(23 28 23);
+    border: 2px solid rgb(116 201 227);
+    background: rgb(116 201 227);
+ 
+}
+.button:hover{
+    background: rgb(59, 182, 220);
+    color: aliceblue;
+}
+
+/* mobile phones ---------------*/
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    .login{
+        display: grid;
+        justify-content: center;
+    }
+   .top{
+    display: grid;
+    direction: ltr;
+   }
+   #heading{
+    font-size: 7rem;
+    margin-top: 6rem;
+   }
+   .box{
+    width: 43vh;
+    margin-left: -2rem;
+    height: 49vh;
+   }
+   #up{
+    margin-left: 54px;
+    margin-top: 40px;
+    width: 85%;
+   }
+   #up-h2{
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-right: 1rem;   
+   }
+   #up-in{
+    width: 74%;
+    padding: .5rem .5rem;
+   }
+   #down{
+    width: 100%;
+    padding: 6px;
+    margin: 24px -4px;
+   }
+   #down-in{
+    margin-left: 10px;
+    margin-left: 2px;
+    padding: 2px;
+    font-size: 21px;
+   }
+   #down-h2{
+    font-size: 19px;
+   }
+
+}

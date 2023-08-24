@@ -1,0 +1,237 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  /* .container {
+    display: grid;
+    border-image: linear-gradient(to right, #e36911, #e40a0a) 0.625rem;
+    border-width: 1.435rem;
+    border-style: solid;
+    grid-template-rows: 79rem;
+    grid-template-columns: 92rem 74rem;
+  } */
+  .container {
+    display: grid;
+    border-image: linear-gradient(to right, #e36911, #F40039) 1;
+    border-width: 1.435rem;
+    border-style: solid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr .8fr; 
+    height: 100vh;
+  }
+  
+  /* .box-content {
+    padding: 0.2rem; 
+    display: grid;
+    font-size: 2.45rem;
+  } */
+  .box-content {
+    padding: 0.2rem;
+    display: grid;
+    /* grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr; */
+    font-size: 2.45rem;
+  }
+
+  #heading{
+    font-size: 6rem;
+    font-family: serif;
+  }
+  #h5{
+    font-size: 4rem;
+    font-family: serif;
+    color: lightgreen;
+    padding-top: 6rem;
+  }
+  #ol li{
+    font-size: 3rem;
+    color: #4ab7e3;
+    font-family: serif;
+  }
+  #hh5{
+    font-size: 4rem;
+    font-family: serif;
+    color: #c9c927;
+  }
+  #butt{
+    border: 0.2rem solid lightgreen;
+    border: transparent;
+    font-size: 2.6rem;
+    padding: 1rem;
+    background: lightgreen;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.6rem 0.6rem rgba(0,0,0,0.5);
+    border-radius: 0.8rem;
+    color: unset;
+    font-family: serif;
+  }
+  #butt:hover{
+    background: rgb(9, 162, 9);
+    color: azure;
+  }
+  .details-1{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+  }
+  
+
+  /* .box-logo {
+    padding: 0rem; 
+    display: grid;
+    grid-template-columns: 23.25rem 7.25rem 37rem 8.50rem;
+    grid-template-rows: 7.9rem 63.2rem 7.9rem;
+   
+    height: 100%;
+  } */
+  .box-logo {
+    display: grid;
+    grid-template-columns: 23.25rem 7.25rem 37rem 8.50rem;
+    grid-template-rows: 1fr 10fr 1fr;
+  }
+
+
+  .box-1 {
+    background: #F40039;
+    grid-row: 1/2;
+    grid-column: 2/5;
+    border-radius: 0 0 0 4.3rem; /* Converted 43px to rem */
+  }
+  
+  .box-2 {
+    background: rgb(255 255 255);
+    grid-row: 2/3;
+    grid-column: 1/4;
+    border-radius: 45rem; /* Converted 270px to rem */
+    z-index: 1;
+    border: 1rem solid #F40039; /* Converted 10px to rem */
+    display: grid;
+    align-items: center;
+  }
+  .logo-image{
+    max-width: 100%;
+    height: auto; 
+    width: 150px; 
+    height: 150px; ;
+  }
+  #tag{
+    font-size: 11rem;
+    font-family: serif;
+    margin: -3rem;
+  }
+  #con{
+    font-size: 8rem;
+    font-weight: 400;
+    font-family: serif;
+  }
+  #link{
+    font-size: 3rem;
+    font-family: serif;
+    text-decoration: none;
+  }
+  #lin{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .box-3 {
+    background: #F40039;
+    grid-row: 3/4;
+    grid-column: 2/5;
+    border-radius: 4.3rem 0 0 0; 
+  }
+  
+  .box-4 {
+    background: #F40039;
+    grid-row: 2/3;
+    grid-column: 3/5;
+  }
+
+  
+  /* Media query for smaller screens */
+
+
+
+
+
+ @media (max-width:1428px){
+    html {
+        font-size: 54.5%;
+    }
+    .container{
+        grid-template-rows: 100vh;
+        grid-template-columns: 3fr 2fr;
+    }
+ }
+ @media (max-width:1360px){
+    html {
+        font-size: 50.5%;
+    }
+    .container{
+        grid-template-rows:100vh;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-logo{
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    }
+    
+  }
+ @media (max-width:1200px){
+    html {
+        font-size: 40.5%;
+    }
+    .container{
+      grid-template-rows:100vh;
+        grid-template-columns: 3fr 3fr;
+    }
+
+ }
+ @media (max-width:1100px){
+    html {
+        font-size: 37.5%;
+    }
+    .container{
+      grid-template-rows:100vh;
+        grid-template-columns: 3fr 3fr;
+    }
+ }
+ @media (max-width:998px){
+    html {
+        font-size: 32.5%;
+    }
+    .container{
+      grid-template-rows:100vh;
+       grid-template-columns: 3fr 3fr;
+    }
+ }
+ @media (max-width:898px){
+    html {
+        font-size: 25.5%;
+    }
+    .container{
+        grid-template-rows: 100vh;
+        grid-template-columns: 3fr 3fr;
+    }
+ }
+ @media (max-width:700px){
+    html {
+        font-size: 25.5%;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 3fr 3fr;
+        grid-template-columns: auto;
+     
+    }
+    .box-logo{
+        display: grid;
+        grid-template-columns: 2fr 1fr 3fr 1fr;
+        grid-template-rows: 1fr 6fr 1fr;
+    }
+    .box-content{
+      display: grid;  
+
+    
+    }
+ }
